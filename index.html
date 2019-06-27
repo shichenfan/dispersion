@@ -189,18 +189,18 @@
 
 
 
-  var transpo  = L.tileLayer(mbUrl, {id: 'atlregional.8aa6c15f',   attribution: mbAttr}),
+  /*var transpo  = L.tileLayer(mbUrl, {id: 'atlregional.8aa6c15f',   attribution: mbAttr}),
       res  = L.tileLayer(mbUrl, {id: 'atlregional.fr3075eg',   attribution: mbAttr}),
-      total  = L.tileLayer(mbUrl, {id: 'atlregional.ghgtotal',   attribution: mbAttr});
+      total  = L.tileLayer(mbUrl, {id: 'atlregional.ghgtotal',   attribution: mbAttr});*/
 
   var currentLayer = "Transportation Emissions";
   // $('#transpo').addClass('active');
 
-  var baseLayers = {
+  /* var baseLayers = {
     "Transportation Emissions": transpo,
     "Residential Emissions": res,
     "Total Emissions": total
-  };
+  }; */
 
   var map = L.map('map', {
     center: [33.89435731090067,-84.37637329101562],
@@ -411,18 +411,18 @@
       grades = [],
       title = '',
       labels = [];
-      if (type=='Residential Emissions') {
+     /* if (type=='Residential Emissions') {
                 grades = [26.3,33.7,38.0,45.4,58.1,79.8];
                 title = 'Annual Residential Metric Tons of CO<sub>2</sub> per Household';
-            }
-            else if (type=='Transportation Emissions') {
+            }*/
+             if (type=='Transportation Emissions') {
                 grades = [2,3,4,5,6,7,8,9,10,11,12,13];
                 title = 'Roadway Sources of Annual Average PM<sub>2.5</sub> (&micro;g/m<sup>3</sup>)';
             }
-            else if (type=='Total Emissions') {
+            /*else if (type=='Total Emissions') {
                 grades = [27.8,36.9,43.1,52.2,65.9,86.4];
                 title = 'Total Annual Metric Tons of CO<sub>2</sub> per Household';
-            }
+            }*/
       div.innerHTML += '<h4>'+title+'</h4>'
       // loop through our density intervals and generate a label with a colored square for each interval
       for (var i = 0; i < grades.length - 1; i++) {
