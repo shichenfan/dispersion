@@ -185,8 +185,8 @@
     var mbAttr = 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
       'Imagery © <a href="https://mapbox.com">Mapbox</a>',
-    mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYXRscmVnaW9uYWwiLCJhIjoiQmZ6d2tyMCJ9.oENm3NSf--qHrimdm9Vvdw';
-
+    /* mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYXRscmVnaW9uYWwiLCJhIjoiQmZ6d2tyMCJ9.oENm3NSf--qHrimdm9Vvdw';*/
+    mbUrl = 'https://api.mapbox.com/styles/v1/fscxxx/cjxdjf1yt05g71cowlc9eygkj.html?fresh=true&title=true&access_token=pk.eyJ1IjoiZnNjeHh4IiwiYSI6ImNqbGRyeXZieTBiMmEzcXF6aDBuajd2MzAifQ.RP27oQjdKHxmq0VP-hVXLA#10.0/42.362400/-71.020000/0';
 
 
   var transpo  = L.tileLayer(mbUrl, {id: 'atlregional.8aa6c15f',   attribution: mbAttr}),
