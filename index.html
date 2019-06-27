@@ -189,18 +189,18 @@
 
 
 
-  /*var transpo  = L.tileLayer(mbUrl, {id: 'atlregional.8aa6c15f',   attribution: mbAttr}),
+  var transpo  = L.tileLayer(mbUrl, {id: 'atlregional.8aa6c15f',   attribution: mbAttr}),
       res  = L.tileLayer(mbUrl, {id: 'atlregional.fr3075eg',   attribution: mbAttr}),
-      total  = L.tileLayer(mbUrl, {id: 'atlregional.ghgtotal',   attribution: mbAttr});*/
+      total  = L.tileLayer(mbUrl, {id: 'atlregional.ghgtotal',   attribution: mbAttr});
 
   var currentLayer = "Transportation Emissions";
   // $('#transpo').addClass('active');
 
-  /* var baseLayers = {
+   var baseLayers = {
     "Transportation Emissions": transpo,
     "Residential Emissions": res,
     "Total Emissions": total
-  }; */
+  }; 
 
   var map = L.map('map', {
     center: [33.89435731090067,-84.37637329101562],
@@ -244,7 +244,6 @@
   var hospital = L.icon({
       iconUrl: 'hospital.png',
       iconSize: [25, 25]
-
   });
   var school = L.icon({
       iconUrl: 'backpack.png',
